@@ -1,0 +1,26 @@
+# DirectTools
+
+> DirectTools is a family of five free web tools that move data directly between two devices over encrypted WebRTC. Pair with a six-character code or QR. No account, no upload, no stored copy.
+
+## Tools
+
+- [DirectFileShare](https://directtools.vercel.app/tools/file-share): Send files of any size between devices.
+- [DirectTextShare](https://directtools.vercel.app/tools/text-share): Send text and links between devices.
+- [DirectScreenShare](https://directtools.vercel.app/tools/screen-share): Share a screen, window or tab with another device.
+- [DirectWebcam](https://directtools.vercel.app/tools/webcam): Use a phone as a webcam and document scanner.
+- [DirectCall](https://directtools.vercel.app/tools/call): Private one-to-one voice and video calls.
+
+## Apps
+
+- https://directfileshare.vercel.app
+- https://directtextshare.vercel.app
+- https://directscreenshare.vercel.app
+- https://directwebcam.vercel.app
+- https://directcall.vercel.app
+
+## Facts
+
+- Free to use. No sign-up.
+- Works in any modern browser on phone, tablet and computer.
+- Content travels directly between the two browsers. No database and no accounts.
+- Author: CodeWithVedang (https://github.com/CodeWithVedang)
