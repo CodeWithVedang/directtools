@@ -4,6 +4,7 @@ import { ArrowRight, Check } from 'lucide-react';
 import { FAQAccordion } from '@/components/marketing/FAQAccordion';
 import { breadcrumbLd, faqLd, JsonLd } from '@/components/marketing/JsonLd';
 import { SectionHead } from '@/components/marketing/PageShell';
+import { ToolArt } from '@/components/marketing/ToolArt';
 import { ToolCard } from '@/components/marketing/ToolCard';
 import { ToolIcon } from '@/components/marketing/ToolIcon';
 import { buttonClass } from '@/components/ui/Button';
@@ -45,7 +46,8 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
       <JsonLd data={breadcrumbLd([{ name: 'Home', url: SITE_URL }, { name: 'All tools', url: `${SITE_URL}/tools` }, { name: tool.name, url: `${SITE_URL}/tools/${tool.slug}` }])} />
 
       <section className="hero-bg border-b border-line">
-        <div className="mx-auto max-w-4xl px-4 py-14 sm:py-20">
+        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-14 sm:py-20 lg:grid-cols-[1.1fr_1fr]">
+          <div className="min-w-0">
           <nav aria-label="Breadcrumb" className="text-sm text-muted">
             <Link href="/tools" className="inline-flex min-h-[44px] items-center hover:text-fg">All tools</Link>
             <span aria-hidden> / </span>
@@ -64,6 +66,10 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
             <Link href="/tools" className={buttonClass('secondary', 'lg')}>
               See all tools
             </Link>
+          </div>
+          </div>
+          <div className="overflow-hidden rounded-2xl border border-line bg-surface shadow-sm">
+            <ToolArt name={tool.icon} />
           </div>
         </div>
       </section>

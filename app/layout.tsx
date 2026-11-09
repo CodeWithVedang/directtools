@@ -4,6 +4,7 @@ import { Analytics } from '@vercel/analytics/react';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { SITE_NAME, SITE_URL, TAGLINE } from '@/lib/site';
+import { ScrollMotion } from '@/components/marketing/ScrollMotion';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'], display: 'swap', variable: '--font-inter' });
@@ -43,6 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main id="main">{children}</main>
         <Footer />
+        <ScrollMotion />
         <Analytics />
       </body>
     </html>
